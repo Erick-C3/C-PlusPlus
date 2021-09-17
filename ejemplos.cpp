@@ -28,10 +28,9 @@ int main(){
 	mostrarVector(vector);
 	
 
-
+	// usamos un switch
 	cout << "ingresa 1 o 2" << endl;
 	cin >> variable;
-
 	switch(variable){
 		case CASO_A:
 			cout<< "caso 1"<<endl;
@@ -43,7 +42,7 @@ int main(){
 			cout<< "caso por defecto" <<endl;
 	}
 
+	//imprimimos la constante SALUDO por consola
 	cout << SALUDO << endl;// endl \n
-
 	return 0;
 }
