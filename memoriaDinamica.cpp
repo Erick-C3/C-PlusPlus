@@ -15,7 +15,6 @@ using namespace std;
 	 			1000 - 60 - 230 - 1022
 
 
-	 - Intro peque a POO
 
 */
 
