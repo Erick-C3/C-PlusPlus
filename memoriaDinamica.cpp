@@ -25,19 +25,20 @@ typedef struct mascota{
 	bool tieneTratamiento;
 }mascota_t;
 
-
+//constante para el vector estatico mascotasPacientes
 const int MAX_TAM = 1000;
 
 int main(){
 
 	int tamanioMaximo = 0;
 
-
+	//definicion e inicializacion del vector estatico
 	mascota_t mascotasPacientes[MAX_TAM] = {};
 
 	cout << "Ingrese nuevo tamanio" <<endl;
 	cin >> tamanioMaximo;
-
+	
+	//definicion e inicializacion del vector dinamico
 	int *vectorPuntero = new int[tamanioMaximo]{};//pedimos memoria dinamica
 	// el uso de archivos y/o base de datos
 	// sql -> lenguaje -> algoritmos + algoritmos js, c, c++, java, etc
@@ -53,7 +54,8 @@ int main(){
 
 	cout << "Actualizar tamanio"<<endl;
 	cin >> tamanioMaximo;
-
+	
+	//definicion e inicializacion del nuevo vector dinamico
 	vectorPuntero = new int[tamanioMaximo]{};//pedir memoria dinamica al sistema
 
 
