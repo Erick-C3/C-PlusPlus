@@ -45,7 +45,7 @@ int main(){
 	cout<< "Ingrese nuevo tamanio"<<endl;
 	cin >> maxTam;
 
-	contenedor = crearContenedorContactos(maxTam);// crea y se libera automaticamente por que es memoria estatica
+	contenedor = crearContenedorContactos(maxTam);//crea el vector dinamico y lo devuelve
 
 	for(int i = 0 ; i < maxTam ; i++){
 		cout<<contenedor[i]<<endl;
