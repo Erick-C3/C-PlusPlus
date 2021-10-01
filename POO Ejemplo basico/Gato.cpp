@@ -10,11 +10,7 @@ void Gato::setEsHuranio(bool esHuranio){
 }
 
 void Gato::setRonroneo(string ronroneo){
-	if(ronroneo > DEMASIADO_GRANDE){
-		ronroneo = //ronroneo acortar tamanio o ronroneo por defecte o etc
-	}else{
-		this->ronroneo = ronroneo;
-	}
+	this->ronroneo = ronroneo;
 }
 
 void Gato::setAccionMolesto(string nuevaAccionMelesto){
@@ -30,18 +26,16 @@ void Gato::setNombre(string nombre){
 }
 
 /*METODOS*/
+
 void Gato::maullar(){
 	cout << maullido <<endl;
 }
 
 
 void Gato::serAcariciado(){
-	if( !esHuranio && fuerzaAcariciar < FUERZA_MINIMA_POSITIVA){
+	if( !esHuranio ){
 		//respuesta positiva: ronroneo
 		cout << ronroneo <<endl;
-		if(edad < 5){
-			//hacer otra cosa
-		}
 	}else{
 		//respuesta negativa: escapa/gruñe/araña 
 		cout << accionMolesto <<endl;
